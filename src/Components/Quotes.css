@@ -102,24 +102,24 @@
 
 @media (max-width: 767px) {
   .for-all .big-box {
-    width: 80%;
-    height: 90%;
+    width: 90%;
+    height: 85%;
   }
 
   .for-all .big-box .small-box {
-    width: 80%;
-    height: 90%;
+    width: 90%;
+    height: 85%;
   }
 }
 
 @media (max-width: 400px) {
   .for-all .big-box {
     width: 95%;
-    height: 95%;
+    height: 85%;
   }
 
   .for-all .big-box .small-box {
     width: 95%;
-    height: 95%;
+    height: 85%;
   }
 }
