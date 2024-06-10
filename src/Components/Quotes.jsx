@@ -74,7 +74,7 @@ function Quotes() {
               </div>
               <div className="for-btn">
                 <button
-                  className="px-2 py-1 text-capitalize"
+                  className="px-2 py-1 mb-1 text-capitalize"
                   onClick={HandleButton}
                 >
                   click for new quote
