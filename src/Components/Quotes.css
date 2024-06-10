@@ -1,0 +1,125 @@
+.for-all {
+  height: 100vh;
+  width: 100wh;
+}
+
+.for-all .big-box {
+  width: 70%;
+  height: 80%;
+  background-color: rgb(69, 69, 231);
+  border-radius: 10px;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.for-all .big-box .small-box {
+  background-color: black;
+  width: 70%;
+  height: 80%;
+  color: white;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.for-all .big-box .small-box .quote {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+}
+
+.for-all .big-box .small-box .for-text {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.for-all .big-box .small-box .author {
+  font-size: 20px;
+  text-align: right;
+  color: red;
+}
+
+.for-all .big-box .small-box .for-btn button {
+  width: 100%;
+  margin-bottom: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: none;
+  border-radius: 10px;
+  background-color: blue;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.for-all .big-box .small-box .developer {
+  color: yellow;
+}
+
+.for-all .big-box .small-box .icon-box::before {
+  height: 250px;
+  width: 110px;
+  position: absolute;
+  top: -130px;
+  right: -45px;
+  content: "";
+  transform: rotate(-45deg);
+  background-color: white;
+  box-shadow: 0 0 0 0.7rem rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.for-all .big-box .small-box .icon-box {
+  top: 15px;
+  position: absolute;
+  right: 15px;
+  z-index: 1;
+  margin: 0;
+}
+
+.for-all .big-box .small-box .for-image {
+  height: 40px;
+  width: 40px;
+  border-radius: 20%;
+  transition: all 0.5s ease-in-out;
+  animation: forImage 1s ease-in-out forwards;
+}
+
+@keyframes forImage {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 767px) {
+  .for-all .big-box {
+    width: 80%;
+    height: 90%;
+  }
+
+  .for-all .big-box .small-box {
+    width: 80%;
+    height: 90%;
+  }
+}
+
+@media (max-width: 400px) {
+  .for-all .big-box {
+    width: 95%;
+    height: 95%;
+  }
+
+  .for-all .big-box .small-box {
+    width: 95%;
+    height: 95%;
+  }
+}
